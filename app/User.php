@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Tymon\JWTAuth\Contracts\JWTSubject; //implementing JWTauth
+use App\Book;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable implements JWTSubject 
@@ -30,7 +31,7 @@ class User extends Authenticatable implements JWTSubject
      */
     public function books()
     {
-        return $this->hasMany('Book::class');
+        return $this->hasMany(Book::class);
     }
 
     /**==================================JWT=========================================== */

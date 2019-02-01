@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\User;
+use App\Rating;
 
 class Book extends Model
 {
@@ -14,7 +16,7 @@ class Book extends Model
      */
     public function user()
     {
-        return $this->belongsTo('User::class');
+        return $this->belongsTo(User::class);
     }
 
     /** Relation between book and rating
@@ -22,6 +24,6 @@ class Book extends Model
      */
     public function ratings()
     {
-        return $this->hasMany('Rating::class');
+        return $this->hasMany(Rating::class);
     }
 }
