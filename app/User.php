@@ -12,8 +12,6 @@ class User extends Authenticatable
 
     /**
      * The attributes that are mass assignable.
-     *
-     * @var array
      */
     protected $fillable = [
         'name', 'email', 'password',
@@ -21,10 +19,16 @@ class User extends Authenticatable
 
     /**
      * The attributes that should be hidden for arrays.
-     *
-     * @var array
      */
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**The relation between user and the book model
+     * User can add many books 1-M 
+     */
+    public function books()
+    {
+        return $this->hasMany('Book::class');
+    }
 }
