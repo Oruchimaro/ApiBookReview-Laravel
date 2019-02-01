@@ -81,16 +81,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    " Book-Review-api "
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <br>
+                    <p> this is an test app for <strong>api</strong> by the tutorial from link below </p>
+                    <br>
+                    <a href="https://blog.pusher.com/build-rest-api-laravel-api-resources/">book-review-api</a>
+                    <a href="https://github.com/ammezie/book-reviews-api">GitHub</a>
                 </div>
             </div>
         </div>
