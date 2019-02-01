@@ -15,13 +15,13 @@ class BookREsource extends JsonResource
     public function toArray($request)
     {
         return [
-            'user_id' => $this->user_id,
-            'book_id' => $this->book_id,
-            'rating' => $this->rating,
+            'id' => $this->id,
+            'title' => $this->title,
+            'description' => $this->description,
             'created_at' => (string) $this->created_at,
             'updated_at' => (string) $this->updated_at,
-            'book' =>$this->book, //response will contain the book that rating is for
-            
+            'user' => $this->user,
+            'ratings' => $this->ratings,
             /**We are using the ratings relationship defined of 
              * the Book model to fetch all the ratings that have be made on the specified book 
              * Then, using collection avg(), we get the average of the ratings. 

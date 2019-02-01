@@ -9,6 +9,11 @@ use App\Http\Resources\RatingResource;
 
 class RatingController extends Controller
 {
+    public function __construct()
+    {
+      $this->middleware('auth:api');
+    }
+    
     /**This function is used to rate  a specefic book
      * The "firstOrCreate" checks too see if a user already rated a sepecefic book
      * If the user has, we simply return a rating resource based on the rating.
