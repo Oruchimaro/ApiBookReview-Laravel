@@ -33,4 +33,14 @@ class BookREsource extends JsonResource
         ];
         // return parent::toArray($request);
     }
+
+    //the attachment to data jwt
+    public function with($request)
+    {
+        return [
+            'version' => '1.0.0',
+            'author' => 'Amir Daneshkar',
+            'about' => 'This is a test app to show api-resource'
+        ];
+    }
 }

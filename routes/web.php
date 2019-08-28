@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('books','BookController@index')->name('books.index');
+Route::get('books','BookController@index')->name('books.index');
+Route::post('login', 'AuthController@login')->name('user.login'); //login user
+
 // Route::post('book/store','BookController@store')->name('books.store');
 

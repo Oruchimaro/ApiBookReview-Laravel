@@ -1,0 +1,311 @@
+{
+	"variables": [],
+	"info": {
+		"name": "book-review-api",
+		"_postman_id": "d9f96484-7429-df85-c9d3-3d915c132a45",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/register",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU0OTA0MjgzMCwiZXhwIjoxNTQ5MDQ2NDMwLCJuYmYiOjE1NDkwNDI4MzAsImp0aSI6Im9UNzE3NXJWTEQwZXZuZ0giLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.KnQR1SUz4XaheAQK68lmzDLhHG7FsPOyzD24d91ugac",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "amiruser1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "am@am.am",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "amirtest",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "am@am.am",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/books (index)",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/books",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "amirtest",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "amir@am.am",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/books (store)",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/books",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU0OTAzNjU2MiwiZXhwIjoxNTQ5MDQwMTYyLCJuYmYiOjE1NDkwMzY1NjIsImp0aSI6Im90Y1drb2tMdXVvajZCZ0wiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.CXu6ZacMLdnUS0la4We3PXCoycx6ojxNfvK9-m3xaq0",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU0OTAzNjU2MiwiZXhwIjoxNTQ5MDQwMTYyLCJuYmYiOjE1NDkwMzY1NjIsImp0aSI6Im90Y1drb2tMdXVvajZCZ0wiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.CXu6ZacMLdnUS0la4We3PXCoycx6ojxNfvK9-m3xaq0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "book of lnowlegesdkka",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": " /svg/404.svg\n[Fri Feb  1 18:46:06 2019] 127.0.0.1:54338 [200]: /favicon.ico\n[Fri Feb  1 18:46:55 2019] 127.0.0.1:54346 [200]: /favicon.ico\n[Fri Feb  1 18:52:31 2019] 127.0.0.1:54362 [200]: /favicon.ico\n[Fri Feb  1 18:53:22 2019] 127.0.0.1:54374 [200]: /favicon.ico\n",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/books/{Bookid} (show)",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/books/5",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU0OTA0MjgzMCwiZXhwIjoxNTQ5MDQ2NDMwLCJuYmYiOjE1NDkwNDI4MzAsImp0aSI6Im9UNzE3NXJWTEQwZXZuZ0giLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.KnQR1SUz4XaheAQK68lmzDLhHG7FsPOyzD24d91ugac",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "amir@am.am",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/books/{Bookid}(update)",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/books/5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU0OTExNTQwMSwiZXhwIjoxNTQ5MTE5MDAxLCJuYmYiOjE1NDkxMTU0MDEsImp0aSI6IkRwNUxYZ2ZqeFQ5blQzaHkiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.z9eqg_KV0nJoJ1YHyWoASalQpHtrrwfH6UQy9F33CfU",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"article of test update \",\n\t\"description\" : \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU0OTExNTQwMSwiZXhwIjoxNTQ5MTE5MDAxLCJuYmYiOjE1NDkxMTU0MDEsImp0aSI6IkRwNUxsdasYZ2ZqeFQ5blQzaHkiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.z9eqg_KV0nJoJ1YHyWoASalQpHtrrwfH6UQy9F33CfU\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/books/{Bookid}destroy",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/books/3",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU0OTA0MjgzMCwiZXhwIjoxNTQ5MDQ2NDMwLCJuYmYiOjE1NDkwNDI4MzAsImp0aSI6Im9UNzE3NXJWTEQwZXZuZ0giLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.KnQR1SUz4XaheAQK68lmzDLhHG7FsPOyzD24d91ugac",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/books/{bookid}/ratings",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/books/5/ratings",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9yZWdpc3RlciIsImlhdCI6MTU0OTA0Mzc1NiwiZXhwIjoxNTQ5MDQ3MzU2LCJuYmYiOjE1NDkwNDM3NTYsImp0aSI6IkpwenpjOW1DNVNxb2UwOGciLCJzdWIiOjMsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.R2yOhU09XIjhLHUeJ8RJV1YoxdzpRretSZKzyJgy7R8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "rating",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
