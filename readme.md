@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About This
+# About This
 
 this tutorial was copied from 
     https://blog.pusher.com/build-rest-api-laravel-api-resources/
@@ -24,25 +24,54 @@ link to github :
 ==============================================================================================================
 
 
-Usage:
-clone to a directory
+## Usage:
+clone to a directory and cd into it
+
 $ composer install
-$ npm install
-make a ".env" file and enter your db credentials
-add the postman collection to postman agent
-import the .sql file to db
+
+$ cp .env.example .env
+
+Edit database credentials in .env file
+
+Create a Database 
+
+import .sql file into it or $ php artisan migrate
+
+Add the postman collection to postman agent or Insomnia Collection to insomnia agent
+
+$ php artisan key:generate
+
+$ php artisan jwt:secret
+
 $ php artisan serve
+
 
 make requests using postman.
 
 
-****
-How to use:
-open postman.
-make register req with credentials.
+***
+### How to use:
+Open Http Request Agent (Postman or Insomnia)
+
+Register A User Or Login With A User
+
+Get the token generated and use it for other requests 
+
+Add the Token to header->authorization section of requests (Authorization:bearer <token>)
+
 get the access token,
-for any other request except login you need to add the token to request header token Bearer.
+
 Tips: For the above to work, the API requests will need the header Accept: application/json
 ****
+#### Requests :
+
+Login, 
+Register, 
+Get Books, 
+Get A Book, 
+Store A Book, 
+Update A Book, 
+Rate A Book, 
+Delete A Book.
 
 
